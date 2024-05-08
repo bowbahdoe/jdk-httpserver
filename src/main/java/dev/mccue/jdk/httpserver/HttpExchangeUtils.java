@@ -36,12 +36,6 @@ public final class HttpExchangeUtils {
      *
      * <p> This method must be called prior to calling {@link HttpExchange#getResponseBody()}.
      *
-     * @implNote This implementation allows the caller to instruct the
-     * server to force a connection close after the exchange terminates, by
-     * supplying a {@code Connection: close} header to the {@linkplain
-     * HttpExchange#getResponseHeaders() response headers} before {@code sendResponseHeaders}
-     * is called.
-     *
      * @param exchange       the {@link HttpExchange} to use
      * @param rCode          the response code to send
      * @param responseLength a {@link ResponseLength} which specifies the amount of bytes that

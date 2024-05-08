@@ -31,8 +31,10 @@ public interface Body {
     void writeTo(OutputStream outputStream) throws IOException;
 
     /**
-     * @return The length of the response body that will be written when {@link Body#writeTo(OutputStream)}
+     * The length of the response body that will be written when {@link Body#writeTo(OutputStream)}
      * is called.
+     *
+     * @return The length of the response body.
      */
     default ResponseLength responseLength() {
         return ResponseLength.unknown();
@@ -78,6 +80,7 @@ public interface Body {
      * </p>
      *
      * @param value The {@link String} to send.
+     * @param charset The {@link Charset} to use for encoding the {@link String}.
      * @return A body which wraps the given {@link String}.
      */
     static Body of(String value, Charset charset) {
