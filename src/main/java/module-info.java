@@ -1,5 +1,5 @@
 /**
- * Utilities for working with the built in JDK http server API.
+ * Utilities for working with the built-in JDK http server API.
  */
 module dev.mccue.jdk.httpserver {
     requires jdk.httpserver;
