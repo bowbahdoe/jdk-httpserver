@@ -148,3 +148,4 @@ HttpExchangeUtils.sendResponse(exchange, 200, Body.of("hello"));
 HttpExchangeUtils.sendResponse(exchange, 200, new JsonBody(...));
 ```
 
+All of this should, I hope, make the API safer to use in practice.
