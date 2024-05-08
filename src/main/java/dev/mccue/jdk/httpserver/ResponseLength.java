@@ -9,9 +9,8 @@ public final class ResponseLength {
     }
 
     public static ResponseLength known(long responseLength) {
-        responseLength = Math.max(0, responseLength);
         return new ResponseLength(
-                responseLength == 0 ? -1 : responseLength
+                responseLength <= 0 ? -1 : responseLength
         );
     }
 
