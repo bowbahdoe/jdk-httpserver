@@ -60,8 +60,6 @@ So a typical usage will look like this.
 
 ```java
 import com.sun.net.httpserver.HttpServer;
-import dev.mccue.jdk.httpserver.Body;
-import dev.mccue.jdk.httpserver.HttpExchangeUtils;
 
 import java.io.IOException;
 import java.net.InetSocketAddress;
