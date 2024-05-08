@@ -113,7 +113,7 @@ HttpExchangeUtils.sendResponseHeaders(200, ResponseLength.known(body.length));
 HttpExchangeUtils.sendResponseHeaders(200, ResponseLength.unknown());
 ```
 
-### 2. Sending a response body is error-prone.
+### 2. Writing a response body is error-prone.
 
 Between when someone calls `sendResponseHeaders` and when they write out to the body
 provided by `getResponseBody` things can go wrong.
