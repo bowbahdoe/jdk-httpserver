@@ -1,7 +1,5 @@
 # JDK Http Server Utilities
 
-# osc52
-
 [![javadoc](https://javadoc.io/badge2/dev.mccue/jdk-httpserver/javadoc.svg)](https://javadoc.io/doc/dev.mccue/osc52)
 [![Tests](https://github.com/bowbahdoe/jdk-httpserver/actions/workflows/test.yml/badge.svg)](https://github.com/bowbahdoe/osc52/actions/workflows/test.yml)
 
