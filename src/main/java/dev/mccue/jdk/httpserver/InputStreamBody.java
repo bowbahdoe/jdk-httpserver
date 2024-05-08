@@ -12,6 +12,7 @@ final class InputStreamBody implements Body {
     InputStreamBody(InputStream value) {
         this(value, ResponseLength.unknown());
     }
+
     InputStreamBody(InputStream value, ResponseLength responseLength) {
         this.value = Objects.requireNonNull(value);
         this.responseLength = Objects.requireNonNull(responseLength);
