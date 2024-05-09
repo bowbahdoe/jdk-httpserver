@@ -1,7 +1,7 @@
 # JDK Http Server Utilities
 
-[![javadoc](https://javadoc.io/badge2/dev.mccue/jdk-httpserver/javadoc.svg)](https://javadoc.io/doc/dev.mccue/osc52)
-[![Tests](https://github.com/bowbahdoe/jdk-httpserver/actions/workflows/test.yml/badge.svg)](https://github.com/bowbahdoe/osc52/actions/workflows/test.yml)
+[![javadoc](https://javadoc.io/badge2/dev.mccue/jdk-httpserver/javadoc.svg)](https://javadoc.io/doc/dev.mccue/jdk-httpserver)
+[![Tests](https://github.com/bowbahdoe/jdk-httpserver/actions/workflows/test.yml/badge.svg)](https://github.com/bowbahdoe/jdk-httpserver/actions/workflows/test.yml)
 
 Utilities for working with the JDK's [built-in HTTP server](https://docs.oracle.com/en/java/javase/21/docs/api/jdk.httpserver/module-summary.html).
 
