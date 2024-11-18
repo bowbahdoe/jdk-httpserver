@@ -15,7 +15,7 @@ Requires Java 21+
 <dependency>
     <groupId>dev.mccue</groupId>
     <artifactId>jdk-httpserver</artifactId>
-    <version>2024.05.08</version>
+    <version>2024.11.18</version>
 </dependency>
 ```
 
@@ -23,7 +23,7 @@ Requires Java 21+
 
 ```
 dependencies {
-    implementation("dev.mccue:jdk-httpserver:2024.05.08")
+    implementation("dev.mccue:jdk-httpserver:2024.11.18")
 }
 ```
 
@@ -32,7 +32,7 @@ dependencies {
 ```java
 import com.sun.net.httpserver.HttpServer;
 import dev.mccue.jdk.httpserver.Body;
-import dev.mccue.jdk.httpserver.HttpExchangeUtils;
+import dev.mccue.jdk.httpserver.HttpExchanges;
 
 import java.io.IOException;
 import java.net.InetSocketAddress;
@@ -41,7 +41,7 @@ void main() throws IOException {
     var server = HttpServer.create(new InetSocketAddress(8000), 0);
     server.createContext("/", exchange -> {
         exchange.getResponseHeaders().put("Content-Type", "text/html");
-        HttpExchangeUtils.sendResponse(exchange, 200, Body.of("<h1> Hello, world! </h1>"));
+        HttpExchanges.sendResponse(exchange, 200, Body.of("<h1> Hello, world! </h1>"));
     });
     server.start();
 }

@@ -6,7 +6,7 @@
 
     <groupId>dev.mccue</groupId>
     <artifactId>jdk-httpserver</artifactId>
-    <version>2024.05.08</version>
+    <version>2024.11.18</version>
     <packaging>jar</packaging>
 
     <name>jdk-httpserver</name>
